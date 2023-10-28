@@ -55,7 +55,7 @@ Here is a Mouser BOM (in progress...) for the passive components and semiconduct
 
 
 ## Board photo
-![Photo of board](photo.jpg)!
+![Photo of board](photo.jpg)
 
 
 
