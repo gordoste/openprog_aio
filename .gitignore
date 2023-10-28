@@ -4,3 +4,5 @@ schematic-positions-to-layout.debug
 40p
 oprog-backups
 production
+~oprog.kicad_pcb.lck
+~oprog.kicad_sch.lck
