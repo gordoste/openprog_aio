@@ -19,6 +19,8 @@ The original firmware uses unsupported tooling (MCC). I have ported the firmware
 
 ## Construction Notes
 
+You can use [this BOM](ibom.html) to assist in placing parts.
+
 Assuming you are hand-soldering, solder the parts in the following order:
 1. Back side: Transistors, diodes, resistors, capacitors, regulator
 2. Front side: Transistors, diodes, resistors, LEDs, ceramic capacitors, inductor, PIC18F25K50, button(s), electrolytic cap, USB socket, pin headers.
