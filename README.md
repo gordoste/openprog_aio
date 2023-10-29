@@ -17,19 +17,9 @@ Please note that the 40-pin Wide DIP sockets have been removed as those devices 
 
 The original firmware uses unsupported tooling (MCC). I have ported the firmware to MPLAB X and it is available at <https://github.com/gordoste/openprog>. All testing of this board is conducted using this firmware.
 
-## Construction Notes
-
-You can use [this BOM](ibom.html) to assist in placing parts.
-
-Assuming you are hand-soldering, solder the parts in the following order:
-1. Back side: Transistors, diodes, resistors, capacitors, regulator
-2. Front side: Transistors, diodes, resistors, LEDs, ceramic capacitors, inductor, PIC18F25K50, button(s), electrolytic cap, USB socket, pin headers.
-
-Be careful to only apply a small amount of solder when soldering the USB socket, as it is very easy to create a bridge. Don't panic if you do - turn your soldering iron up a bit hotter than normal, apply a liberal amount of flux and then use desolder braid to try to get rid of __all__ of the solder from the bridged pins. Once it's cleaned up, try again with less solder.
-
 ## Part List
 
-Here is a Mouser BOM (in progress...) for the passive components and semiconductors. You should consider rounding quantities of passives (Rs and Cs) up to a minimum of 10 to get a better price. In addition to those, you will need the following which are best ordered from AliExpress or similar:
+You can copy and paste [this part list](bom/partlist.txt) into Mouser's BOM tool to order the passive components and semiconductors. In addition to those, you will need the following which are best ordered from AliExpress or similar:
 1. IC sockets. You may wish to only populate the sockets you use. Here is a list of all of the sockets:
    | Socket ID | Socket pin count | Device family | Voltage | Device pin count | Can be ZIF? |
    | ----------|------------------|---------------|---------|------------------|-------------|
@@ -53,6 +43,15 @@ Here is a Mouser BOM (in progress...) for the passive components and semiconduct
 3. one 6x6mm SMD push button for the PROG button (two if you choose to fit the RESET button)
 4. USB socket - either thru-hole Mini-B (I got some from AliExpress which worked fine) or SMD Micro-B (GCT part # USB3076-30-A) (this has fine-pitch pins and is not easy to hand-solder).
 
+## Construction Notes
+
+You can use [this interactive BOM](ibom.html) to assist in placing parts.
+
+Assuming you are hand-soldering, solder the parts in the following order:
+1. Back side: Transistors, diodes, resistors, capacitors, regulator
+2. Front side: Transistors, diodes, resistors, LEDs, ceramic capacitors, inductor, PIC18F25K50, button(s), electrolytic cap, USB socket, pin headers.
+
+Be careful to only apply a small amount of solder when soldering the USB socket, as it is very easy to create a bridge. Don't panic if you do - turn your soldering iron up a bit hotter than normal, apply a liberal amount of flux and then use desolder braid to try to get rid of __all__ of the solder from the bridged pins. Once it's cleaned up, try again with less solder.
 
 ## Board photo
 ![Photo of board](photo.jpg)
