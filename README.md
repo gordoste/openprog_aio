@@ -13,6 +13,10 @@ This version is aimed at allowing you to get started for the lowest cost and wit
 
 Please note that the 40-pin Wide DIP sockets have been removed as those devices are rarely used now and took up too much room. If you want to program those devices, you can easily connect the ICSP output to a breadboard.
 
+## Schematic
+
+The schematic is [here](schematic.pdf).
+
 ## Firmware
 
 The original firmware uses unsupported tooling (MCC). I have ported the firmware to MPLAB X and it is available at <https://github.com/gordoste/openprog>. All testing of this board is conducted using this firmware.
