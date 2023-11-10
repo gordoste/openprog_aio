@@ -1,7 +1,6 @@
 # openprog_aio
 All-in-one variant of Alberto Maccioni's wonderful Openprog PIC/AVR programmer (http://openprog.altervista.org/).
 
-## Board photo
 ![Photo of board](photo.jpg)
 
 The programmer is fully capable of high-voltage programming. The main advantage of this is that you can use the MCLR pin as an extra I/O, which can be very handy on low-pin-count devices.
@@ -75,5 +74,5 @@ After you've soldered everything, download the HEX file from the [firmware repos
 Assuming you've done everything right, when you plug it into your PC, it should show up as "Open Programmer" and the openprog GUI should be able to talk to it. I recommend using the command line "op" tool with the "-HWtest" option to run through basic checks before actually trying to program anything. See the [openprog webpage](http://openprog.altervista.org/) for more information.
 
 
-
+![Board render in KiCAD](render.png)
 
