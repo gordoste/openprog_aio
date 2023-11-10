@@ -1,6 +1,9 @@
 # openprog_aio
 All-in-one variant of Alberto Maccioni's wonderful Openprog PIC/AVR programmer (http://openprog.altervista.org/).
 
+## Board photo
+![Photo of board](photo.jpg)
+
 The programmer is fully capable of high-voltage programming. The main advantage of this is that you can use the MCLR pin as an extra I/O, which can be very handy on low-pin-count devices.
 
 This version is aimed at allowing you to get started for the lowest cost and without making your own PCBs. Therefore, the following changes have been made:
@@ -65,12 +68,12 @@ Assuming you are hand-soldering, solder the parts in the following order:
 
 Be careful to only apply a small amount of solder when soldering the USB socket, as it is very easy to create a bridge. Don't panic if you do - turn your soldering iron up a bit hotter than normal, apply a liberal amount of flux and then use desolder braid to try to get rid of __all__ of the solder from the bridged pins. Once it's cleaned up, try again with less solder.
 
-After you've soldered everything, download the HEX file from the [firmware repository](https://github.com/gordoste/openprog) and program it onto the PIC.
+After you've soldered everything, download the HEX file from the [firmware repository](https://github.com/gordoste/openprog) and program it onto the PIC. The marked "MPLAB_SNAP" connector matches the pinout of the Snap (as shown below) - if you're using a PICKit then you will need to utilise jumper wires to connect the programmer.
+
+![MPLAB Snap attached for programming](snap.jpg)
 
 Assuming you've done everything right, when you plug it into your PC, it should show up as "Open Programmer" and the openprog GUI should be able to talk to it. I recommend using the command line "op" tool with the "-HWtest" option to run through basic checks before actually trying to program anything. See the [openprog webpage](http://openprog.altervista.org/) for more information.
 
-## Board photo
-![Photo of board](photo.jpg)
 
 
 
