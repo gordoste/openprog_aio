@@ -77,6 +77,17 @@ After you've soldered everything, download the HEX file from the [firmware repos
 
 Assuming you've done everything right, when you plug it into your PC, it should show up as "Open Programmer" and the openprog GUI should be able to talk to it. I recommend using the command line "op" tool with the "-HWtest" option to run through basic checks before actually trying to program anything. See the [openprog webpage](http://openprog.altervista.org/) for more information.
 
+## Usage Notes
+
+### Programming 3.3V I2C EEPROMs
+
+The original project did not provide a socket for this, and I have not yet added one. You can use the SPI@3.3V pin header and connect the following:
+|Header pin|Device pin|
+|----------|----------|
+|GND|GND (4)|
+|SCL|SCL (6)|
+|MISO|SDA (5)|
+
 
 ![Board render in KiCAD](render.png)
 
