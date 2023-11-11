@@ -3,11 +3,15 @@ All-in-one variant of Alberto Maccioni's wonderful Openprog PIC/AVR programmer (
 
 ![Photo of board](photo.jpg)
 
-The programmer is fully capable of high-voltage programming. The main advantage of this is that you can use the MCLR pin as an extra I/O, which can be very handy on low-pin-count devices.
+## Benefits
 
-This version is aimed at allowing you to get started for the lowest cost and without making your own PCBs. Therefore, the following changes have been made:
+For low-voltage programming, the big advantage of this programmer over something like the MPLAB Snap is that it can provide power to the target device, and all of the surrounding circuitry (bypass caps, etc.) is built onto the board. You just plug in a device and program it.
 
-* No adapter boards, making it cheaper to order from PCB fabrication shops.
+The programmer is also fully capable of high-voltage programming. This is essential if you need to program an older device, and it also means you can use the MCLR pin as an extra I/O, which can be very handy on low-pin-count devices.
+
+This version is aimed at allowing you to get started for the lowest cost and without making your own PCBs. Therefore, the following changes have been made from the original project:
+
+* No adapter boards - just one board, making it cheaper to order from PCB fabrication shops.
 * Board is still reasonable size at 158x100mm - approx twice the size of the original project's main board
 * Designed to be easily hand-soldered, with 1206 size SMD components. The trickiest thing to solder is the USB socket. You shouldn't need any special equipment if you have clear vision and good lighting - just 0.3mm solder, flux paste and de-soldering braid. NOTE: If you are hand-soldering, it is recommended to use a USB Mini-B socket - see [Part List](#part-list).
 * Documentation is on the board, including clear delineation between 5V/3.3V
